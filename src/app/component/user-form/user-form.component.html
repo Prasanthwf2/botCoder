@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="card">
+    <div style="text-align: center;" class="card-header">
+      <h1 class=" header-title mt-0">User Details</h1>
+</div>
+<br>
+  <form>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-6">
+        
+          <div class="form-group col-sm-8">
+            <label> Name</label><label style="color: red;">*</label>
+           <input type="text" class="form-control"  [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+          </div>
+          
+          <div class="form-group col-sm-8">
+            <label>Phone</label><label style="color: red;">*</label>
+           <input type="text" class="form-control"    [(ngModel)]="number" [ngModelOptions]="{standalone: true}">
+          </div>
+          
+          <div class="form-group col-sm-8">
+            <label>Email</label><label style="color: red;">*</label>
+           <input type="text" class="form-control"    [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+          </div>
+          </div>
+          <div class="col-sm-6">
+                      <div class="form-group col-sm-8">
+            <label>Address</label><label style="color: red;">*</label>
+            <textarea  [(ngModel)]="address" [ngModelOptions]="{standalone: true}" class="form-control" rows="2"></textarea>
+          </div>
+          <div class="form-group col-sm-8">
+            <label>Pin Code</label><label style="color: red;">*</label>
+           <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="pincode">
+          </div>
+          <div class="form-group col-sm-8">
+            <label>City</label><label style="color: red;">*</label>
+           <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="city">
+          </div>
+       
+        </div>
+        
+          </div>
+      </div>
+    <br><br>
+    <div class="card-footer">
+      <div style="text-align: center;">
+        <button type="submit" class="btn btn-success" (click)="onSubmit()">purchased</button>&nbsp;&nbsp;
+      </div>
+    </div>
+  </form>
+  </div>
+
+  
+</div>
+

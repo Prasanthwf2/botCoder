@@ -1,0 +1,15 @@
+<div class="container" *ngIf="searchList">
+    <div class="row">
+        <div  *ngFor="let item of searchList">
+            <div class="card text-center col-sm-4">
+                <img src="{{item.strMealThumb}}" width="100%" height="100%" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.strCategory}}</h5>
+                    <button class="btn" style="background-color: blue;color:white">Add To Cart</button>
+                  </div>
+                <h5></h5>
+                <p></p>
+              </div>
+        </div>
+    </div>
+    </div>
